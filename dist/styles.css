@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.header {
+  background: url("../../assets/images/desktop/image-header.jpg");
+  height: 100vh;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.header div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem;
+}
+.header div h1 {
+  color: var(--White);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  cursor: pointer;
+  color: var(--White);
+}
+.navbar .navbar_button {
+  background: var(--White);
+  padding: 1rem;
+  border-radius: 20px;
+  width: 100px;
+  text-align: center;
+  color: var(--VeryDarkDesaturatedBlue);
+}
+.navbar .navbar_button:hover {
+  background: var(--DarkBlue);
+  color: var(--White);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(auto, 1fr);
+}
+.grid article {
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.grid .grid-article_2,
+.grid .grid-article_3 {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.grid .grid-article_2 {
+  background: url("../../assets/images/desktop/image-transform.jpg");
+}
+.grid .grid-article_3 {
+  background: url("../../assets/images/desktop/image-stand-out.jpg");
+}
+.grid .grid-article_5 {
+  background: url("../../assets/images/desktop/image-graphic-design.jpg");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+.grid .grid-article_6 {
+  background: url("../../assets/images/desktop/image-photography.jpg");
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.testimonials div {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+  gap: 2rem;
+}
+.testimonials div article {
+  height: 100%;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  gap: 1rem;
+}
+.testimonials div article img {
+  border-radius: 50%;
+  height: 50px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto, 1fr);
+}
+.gallery article {
+  height: 300px;
+}
+.gallery .gallery-article_1 {
+  background: url("../../assets/images/desktop/image-gallery-milkbottles.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.gallery .gallery-article_2 {
+  background: url("../../assets/images/desktop/image-gallery-orange.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.gallery .gallery-article_3 {
+  background: url("../../assets/images/desktop/image-gallery-cone.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+.gallery .gallery-article_4 {
+  background: url("../../assets/images/desktop/image-gallery-sugarcubes.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100%;
+}
+
+footer {
+  background: var(--DarkModerateCyan);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer .logo {
+  width: 100%;
+  height: 100%;
+}
+footer .footer-links {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 3rem;
+  background: var(--DarkModerateCyan);
+  border: 2px solid red;
+}
+footer .footer-social {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  background: var(--DarkModerateCyan);
+  gap: 3rem;
+  border: 2px solid red;
+}
+
+:root {
+  --SoftRed: hsl(7, 99%, 70%);
+  --Yellow: hsl(51, 100%, 49%);
+  --DarkDesaturatedCyan/*(graphic design text)*/: hsl(167, 40%, 24%);
+  --DarkBlue/*(photography text)*/: hsl(198, 62%, 26%);
+  --DarkModerateCyan/*(footer)*/: hsl(168, 34%, 41%);
+  --VeryDarkDesaturatedBlue: hsl(212, 27%, 19%);
+  --VeryDarkGrayishBlue: hsl(213, 9%, 39%);
+  --DarkGrayishBlue: hsl(232, 10%, 55%);
+  --GrayishBlue: hsl(210, 4%, 67%);
+  --White: hsl(0, 0%, 100%);
+}/*# sourceMappingURL=styles.css.map */
