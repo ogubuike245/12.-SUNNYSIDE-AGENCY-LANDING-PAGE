@@ -113,7 +113,7 @@ body {
 
   div {
     display: grid;
-    grid-template-columns: repeat(auto, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     article {
       height: 100%;
@@ -137,7 +137,7 @@ body {
 
 .gallery {
   display: grid;
-  grid-template-columns: repeat(auto, 1fr);
+  grid-template-columns: repeat(4, 1fr);
 
   article {
     height: 300px;
@@ -189,7 +189,7 @@ footer {
     list-style: none;
     gap: 3rem;
     background: var(--DarkModerateCyan);
-    border: 2px solid red;
+    // border: 2px solid red;
   }
 
   .footer-social {
@@ -198,6 +198,6 @@ footer {
     list-style: none;
     background: var(--DarkModerateCyan);
     gap: 3rem;
-    border: 2px solid red;
+    // border: 2px solid red;
   }
 }
